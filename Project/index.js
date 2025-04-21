@@ -1,10 +1,38 @@
-const http = require("http");
-const port = 3000;
+const express = require("express");
 
-const server = http.createServer((req, res) => {
-  console.log(req.url, req.method);
+const app = express();
+
+// middlewares
+app.use((req, res, next) => {
+  console.log("Request path : ", req.url);
+  next();
 });
 
-server.listen(port, () => {
-  console.log(`Connection established. Visit the link: 'http://localhost:${port}'`);
+app.use((req, res, next) => {
+  console.log("Request method : ", req.method);
+  next();
+});
+
+app.get("/", (req, res, next) => {
+  res.send("<h2>Hello! Welcome to the project homepage...");
+  next();
+});
+
+app.get("/contact-us", (req, res, next) => {
+  res.send(`
+    <h3>Please fill in the following form fields carefully!</h3>
+    <form action="/contact-us" method="POST">
+      <input type="text" name="username" placeholder="Your username">
+      <input type="email" name="email" placeholder="Your email address">
+      <input type="submit" value="Submit">
+    </form>
+    `);
+});
+
+app.post("/contact-us", (req, res, next) => {
+  res.send(`<h1>Hey! Nice to meet you.</h1>`);
+})
+
+app.listen(4000, () => {
+  console.log("success: server connected to 'http://localhost:4000'");
 });
