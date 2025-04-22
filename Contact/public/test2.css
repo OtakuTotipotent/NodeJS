@@ -1,0 +1,12 @@
+body {
+  background-color: #333;
+  color: green;
+}
+
+a {
+  color: wheat;
+}
+
+* {
+  font-family: 'poppins';
+}
