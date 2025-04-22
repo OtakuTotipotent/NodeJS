@@ -12,7 +12,9 @@ const port = 3003
 app.use(express.urlencoded())
 
 // Route Handling
-app.use(router)
+app.use(express.static(path.join(rootPath, "public"))) // public folder's path
+app.use(router) // root address path
+
 app.use((req, res, next) => {
   res.sendFile(path.join(rootPath, "views", "404.html"))
 })
