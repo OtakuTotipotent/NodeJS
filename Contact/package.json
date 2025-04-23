@@ -10,15 +10,14 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "",
+    "description": "A practice project based on node.js express and tailwind css",
     "dependencies": {
-        "@tailwindcss/cli": "^4.1.4",
-        "autoprefixer": "^10.4.21",
-        "express": "^5.1.0",
-        "postcss": "^8.5.3",
-        "tailwindcss": "^4.1.4"
+        "express": "^5.1.0"
     },
     "devDependencies": {
-        "nodemon": "^3.1.9"
+        "@tailwindcss/cli": "^4.1.4",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4"
     }
 }
