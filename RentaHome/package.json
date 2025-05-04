@@ -1,0 +1,25 @@
+{
+    "name": "RentAHome",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.4",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4",
+        "nodemon": "^3.1.9"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tailwind": "tailwindcss -i ./views/main_style.css -o ./public/style.css --watch",
+        "start": "nodemon index.js & npm run tailwind"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

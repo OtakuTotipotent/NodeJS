@@ -15,10 +15,15 @@ router.get("/contact-us", (req, res, next) => {
   res.sendFile(path.join(rootPath, "views", "contact-us.html"))
 })
 
+// Added homes storage
+const userRequests = []
+
 router.post("/contact-us", (req, res, next) => {
+  // registeredHomes.push(req.body)
   res.sendFile(path.join(rootPath, "views", "contact-response.html"))
   console.log("Contact Post: ", req.body)
 })
 
 // Exports
-module.exports = router
+exports.router = router
+exports.userRequests = userRequests

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAH | Create</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="p-2 bg-green-600 flex gap-4">
+    <a class="p-1 pl-2 pr-2 rounded-md text-white hover:bg-green-300 hover:text-black" href="/">Homepage</a>
+    <a class="p-1 pl-2 pr-2 rounded-md text-white hover:bg-green-300 hover:text-black" href="/host/add-home">Add
+      Home</a>
+  </header>
+  <main>
+    <h2>Create a Home</h2>
+    <form action="/host/add-home" method="post">
+      <input type="text" name="home_name" placeholder="Enter your home name">
+      <input type="submit">
+    </form>
+  </main>
+</body>
+
+</html>

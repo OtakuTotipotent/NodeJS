@@ -11,11 +11,11 @@
 <body>
   <main>
     <center>
-      <h3 class="text-red-500 border-l-4">Please fill in the following form fields carefully!</h3>
-      <form action="/contact-us" method="POST">
-        <input type="text" name="username" placeholder="Your username">
-        <input type="email" name="email" placeholder="Your email address">
-        <input type="submit">
+      <h3 class="text-white bg-red-500 font-bold p-4">Please fill in the following form fields carefully!</h3>
+      <form action="/contact-us" method="POST" class="grid grid-cols-2 gap-2 m-4">
+        <input type="text" name="username" placeholder="Your username" class="p-2 bg-green-300 text-black font-bold">
+        <input type="email" name="email" placeholder="Your email address" class="p-2 bg-green-300 text-black font-bold">
+        <input type="submit" class="p-2 bg-blue-500 text-white font-bold cursor-pointer">
       </form>
     </center>
   </main>

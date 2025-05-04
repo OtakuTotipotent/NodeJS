@@ -1,8 +1,8 @@
 // Modules & Imports
 const express = require("express")
-const rootPath = require("./utils/path_utility")
 const path = require("path")
-const router = require("./routes/routes")
+const rootPath = require("./utils/path_utility")
+const { router } = require("./routes/routes")
 
 // Configurations
 const app = express()

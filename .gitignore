@@ -1,1 +1,3 @@
 Contact/.vscode/settings.json
+node_modules/
+.env
