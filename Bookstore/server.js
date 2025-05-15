@@ -17,8 +17,8 @@ dbConnection()
 
 
 // Middlewares & Routing
-app.use('api/books', booksRouter)
-app.use('api/users', usersRouter)
+app.use('/books', booksRouter)
+app.use('/users', usersRouter)
 app.use(adminRouter)
 app.use(rootRouter)
 

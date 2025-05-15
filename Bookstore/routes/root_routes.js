@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
 	res.send(`
-		<h3>Hello, Welcome Home</h3>
+		<h3>Hello, Welcome to BOOKSTORE</h3>
 		<a href="/home"> Home </a>
 		`)
 })
